@@ -1,0 +1,170 @@
+Version 9.0 Build 132 02/25/2009 SJ Web Edition
+11
+980
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+one_bit_adder_subtractor_1
+# storage
+db|One_bit_adder_subtractor.(1).cnf
+db|One_bit_adder_subtractor.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+one_bit_adder_subtractor_1.v
+dab9080f093d1181d4c11814aecab46
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+Mux
+# storage
+db|One_bit_adder_subtractor.(3).cnf
+db|One_bit_adder_subtractor.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Mux.v
+9ec0b03b58bd269d29c16e19373d9d1
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+OnebitAlu:inst1|Mux:inst
+OnebitAlu:inst|Mux:inst
+}
+# macro_sequence
+
+# end
+# entity
+OnebitAlu
+# storage
+db|One_bit_adder_subtractor.(2).cnf
+db|One_bit_adder_subtractor.(2).cnf
+# case_insensitive
+# source_file
+OnebitAlu.bdf
+9a41227358a8c54ca797e323b5c33c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+OnebitAlu:inst1
+OnebitAlu:inst
+}
+# macro_sequence
+
+# end
+# entity
+One_bit_adder_subtractor
+# storage
+db|One_bit_adder_subtractor.(0).cnf
+db|One_bit_adder_subtractor.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+One_bit_adder_subtractor.v
+e5d09cb6c7b4b8e3079c27aead1a255
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+OnebitAlu:inst1|One_bit_adder_subtractor:inst8
+OnebitAlu:inst|One_bit_adder_subtractor:inst8
+}
+# macro_sequence
+
+# end
+# entity
+fullproject
+# storage
+db|One_bit_adder_subtractor.(4).cnf
+db|One_bit_adder_subtractor.(4).cnf
+# case_insensitive
+# source_file
+fullproject.bdf
+9b1b8743263d108629d3ce7ef6c1fd1c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

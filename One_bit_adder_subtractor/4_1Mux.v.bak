@@ -1,0 +1,14 @@
+module 4_1Mux(d0,d1,d2,d3,sel output f);
+input d0, d1, d2,d3;
+input [1:0]sel;
+reg f; 
+always @ (d0,d1,d2,d3,sel) begin
+case (sel)
+'b00: f=d0;
+'b01: f=d1;
+'b10: f=d2;
+'b11: f=d3;
+endcase
+end 
+endmodule 
+

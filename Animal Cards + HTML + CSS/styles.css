@@ -1,0 +1,24 @@
+/* add your CSS here */
+img{
+  width: 300px;
+}
+.interestingFact{
+  font-style:italic;
+  
+}
+body{
+  width: 300px;
+  border: 1px solid lightgray;
+  padding: 0.5em;
+}
+.infobox{
+  width: 284px;
+  border: 1px solid lightgray;
+  padding: 0.5em;
+}
+li {
+  list-style: none;
+}
+span{
+  font-weight: bold;
+} 

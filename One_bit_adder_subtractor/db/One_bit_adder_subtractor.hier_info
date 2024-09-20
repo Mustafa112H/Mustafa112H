@@ -1,0 +1,93 @@
+|fullproject
+F0 <= OnebitAlu:inst1.Answer
+A0 => OnebitAlu:inst1.a
+B0 => OnebitAlu:inst1.b
+Cin0 => OnebitAlu:inst1.m
+M0 => OnebitAlu:inst1.M0
+M0 => OnebitAlu:inst.M0
+M1 => OnebitAlu:inst1.M1
+M1 => OnebitAlu:inst.M1
+F1 <= OnebitAlu:inst.Answer
+A1 => OnebitAlu:inst.a
+B1 => OnebitAlu:inst.b
+Cout1 <= OnebitAlu:inst.Carry
+
+
+|fullproject|OnebitAlu:inst1
+Answer <= Mux:inst.f
+a => One_bit_adder_subtractor:inst8.a
+a => inst2.IN0
+a => inst3.IN1
+a => inst4.IN0
+b => One_bit_adder_subtractor:inst8.b
+b => inst2.IN1
+b => inst3.IN0
+b => inst4.IN1
+m => One_bit_adder_subtractor:inst8.m
+M0 => Mux:inst.M0
+M1 => Mux:inst.M1
+Carry <= One_bit_adder_subtractor:inst8.car
+
+
+|fullproject|OnebitAlu:inst1|Mux:inst
+d0 => Mux0.IN0
+d1 => Mux0.IN1
+d2 => Mux0.IN2
+d3 => Mux0.IN3
+M0 => Mux0.IN4
+M1 => Mux0.IN5
+f <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullproject|OnebitAlu:inst1|One_bit_adder_subtractor:inst8
+a => Add0.IN1
+a => sum~0.IN0
+a => car~0.IN0
+b => Add0.IN2
+b => sum~0.IN1
+b => car~0.IN1
+m => sum~1.OUTPUTSELECT
+m => car~1.OUTPUTSELECT
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+car <= car~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullproject|OnebitAlu:inst
+Answer <= Mux:inst.f
+a => One_bit_adder_subtractor:inst8.a
+a => inst2.IN0
+a => inst3.IN1
+a => inst4.IN0
+b => One_bit_adder_subtractor:inst8.b
+b => inst2.IN1
+b => inst3.IN0
+b => inst4.IN1
+m => One_bit_adder_subtractor:inst8.m
+M0 => Mux:inst.M0
+M1 => Mux:inst.M1
+Carry <= One_bit_adder_subtractor:inst8.car
+
+
+|fullproject|OnebitAlu:inst|Mux:inst
+d0 => Mux0.IN0
+d1 => Mux0.IN1
+d2 => Mux0.IN2
+d3 => Mux0.IN3
+M0 => Mux0.IN4
+M1 => Mux0.IN5
+f <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullproject|OnebitAlu:inst|One_bit_adder_subtractor:inst8
+a => Add0.IN1
+a => sum~0.IN0
+a => car~0.IN0
+b => Add0.IN2
+b => sum~0.IN1
+b => car~0.IN1
+m => sum~1.OUTPUTSELECT
+m => car~1.OUTPUTSELECT
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+car <= car~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
